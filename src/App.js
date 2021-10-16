@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import {BrowserRouter as Router} from "react-router-dom";
+import {Helmet} from 'react-helmet'
+import './css/App.css';
+import MainRoute from './utils/routes';
+import MainHeader from './components/layouts/MainHeader';
+import Footer from './components/layouts/Footer';
+const TITLE = 'Zetu School - Home'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+      <div>
+        <MainHeader/>
+        <MainRoute/>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
