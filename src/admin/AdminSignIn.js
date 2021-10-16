@@ -1,28 +1,28 @@
 import React from 'react';
-import {Link, useHistory} from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
 
-function StudentSignIn() {
+function AdminSignIn() {
     const history = useHistory();
     onsubmit=(e)=>{
-        history.push("/student");
+        history.push("/admin");
     }
     return (
         <div>
-           <h2 align="center">Student Login</h2><br/>
+           <h2 align="center">Admin Login</h2><br/>
            <div align="center" className="">
                <form className="">
                    <div className="form-group col-7 form">
                     <label htmlFor="exampleInputEmail1">
-                        <b>Student ID</b>
+                        <b>Admin ID</b>
                     </label>
                     <input 
                     type="text" 
                     className="form-control"
-                    id="studentId"
+                    id="adminId"
                     aria-describedby="emailHelp"
                    /*  value={this.state.adminID}
                     onChange={this.onChangeID} */
-                    placeholder="Student ID"
+                    placeholder="Admin ID"
                     
                     />
                    </div>
@@ -44,13 +44,11 @@ function StudentSignIn() {
                    <button type="submit" className="btn btn-primary form">
                         Login
                     </button>
-                    <div className="text-secondary text-center">
-                        Don't have an account? <Link to="/studentSignUp">Sign Up</Link>
-                    </div>
+                    
                </form>
            </div>
         </div>
     )
 }
 
-export default StudentSignIn
+export default AdminSignIn

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import TextInputGroup from "../components/input/inputDefinitions/TextInputGroup";
 import TextSelectGroup from "../components/input/inputDefinitions/TextSelectGroup";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,15 +7,19 @@ function StudentSignUp() {
     return (
         <div style={{marginTop:20}}>
             <center>
-                <div className="card mb-3" style={{width: "700px"}}>
-                    <div style={{width: "700px", overflow: "hidden", overflowY: "auto",}}>
-                        <div className="card-header">
+                <div align="center" className="card mb-3" style={{width: "400px"}}>
+                    <div align="center" style={{width: "400px", overflow: "hidden", overflowY: "auto",}}>
+                        <h2 className="card-header">
                             <b> Student Registration</b>
-                        </div>
+                        </h2>
                         <div className="card-header-pills">
-                            <b> Please enter full information and click submit</b>
+                            <p> Please enter full information and click submit</p>
                         </div>
-                        <div className="çard-body">
+                        <br/>
+                        <div className="çard-body p-2">
+                                <h3 className="card-title">
+                                    <b> Student Details</b>
+                                </h3>
                             <form>
                             <TextInputGroup
                                         label="Full Name"
@@ -69,9 +74,9 @@ function StudentSignUp() {
                                         error={errors.password} */
                                     />
                                     <TextInputGroup
-                                        label="Current Class"
+                                        label="Current Year"
                                         name="currentClass"
-                                        placeholder=" Current Class"
+                                        placeholder=" Current Year"
                                        /*  value={this.state.currentClass}
                                         onChange={this.onChangeCurrentClass}
                                         error={errors.currentClass} */
@@ -102,9 +107,9 @@ function StudentSignUp() {
                                         onChange={this.onChangeAllergies}
                                         error={errors.allergies} */
                                     />
-                                    <div className="card-title">
+                                    <h3 className="card-title">
                                         <b> Particulars of Parents/Guardian</b>
-                                    </div>
+                                    </h3>
                                     <TextInputGroup
                                         label="Home Address"
                                         name="address"
@@ -113,9 +118,9 @@ function StudentSignUp() {
                                         onChange={this.onChangeAddress}
                                         error={errors.address} */
                                     />
-                                    <div className="card-subtitle">
+                                    <h4 className="card-subtitle">
                                         <b> Father Details</b>
-                                    </div>
+                                    </h4>
                                     <TextInputGroup
                                         label="Father's Name"
                                         name="fatherName"
@@ -148,9 +153,9 @@ function StudentSignUp() {
                                         onChange={this.onChangeFatherEmail}
                                         error={errors.fatherEmail} */
                                     />
-                                    <div className="card-subtitle">
+                                    <h4 className="card-subtitle">
                                         <b> Mother Details</b>
-                                    </div>
+                                    </h4>
                                     <TextInputGroup
                                         label="Mother's Name"
                                         name="motherName"
@@ -183,9 +188,9 @@ function StudentSignUp() {
                                         onChange={this.onChangeMotherEmail}
                                         error={errors.motherEmail} */
                                     />
-                                    <div className="card-subtitle">
+                                    <h4 className="card-subtitle">
                                         <b> Guardian Details</b>
-                                    </div>
+                                    </h4>
                                     <TextInputGroup
                                         label="Guardian's Name"
                                         name="guardianName"
@@ -218,6 +223,18 @@ function StudentSignUp() {
                                         onChange={this.onChangeGuardianEmail}
                                         error={errors.guardianEmail} */
                                     />
+                                    <div>
+                                        <button
+                                            class="btn btn-primary form waves-effect waves-light"
+                                            type="submit"
+                                            name="action"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                    <div className="text-secondary text-center">
+                                        Already have an account? <Link to="/studentSignIn">Sign In</Link>
+                                    </div>
                             </form>
                         </div>
                     </div>
