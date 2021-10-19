@@ -3,9 +3,9 @@ import {BrowserRouter as Router, Link} from "react-router-dom";
 import "./css/Home.css";
 import {redirect} from "./utils/utils";
 
-import studentImg from "./img/studentimage.jpg";
-import teacherImg from "./img/teacherImg.jpg";
-import parentImg from "./img/parentImg.jpg"
+import studentImg from "./img/zetu-student.jpg";
+import teacherImg from "./img/zetu-teacher.jpg";
+import parentImg from "./img/zetu-parent.jpg"
 import adminImg from "./img/adminImg.jpg";
 
 function Home() {

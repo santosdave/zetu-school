@@ -18,32 +18,68 @@ function Admin() {
                                         </div>
                                         <div className="çard-body"/>
                                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <a className="navbar-brand"
-                           href="http://courseweb.sliit.lk/"
-                           target="_blank"
-                        >
-                        </a>
+                                            <Link to="/studentlist" className="navbar-brand">
+                                                Student Management
+                                            </Link>
 
-                        <Link to="/studentlist" className="navbar-brand">
-                            Student Management
-                        </Link>
+                                            <div className="collapse navbar-collapse">
+                                                <ul className="navbar-nav mr-auto">
+                                                    <li className="navbar-item">
+                                                        <Link to="/studentlist" className="nav-link">
+                                                            Manage Student
+                                                        </Link>
+                                                    </li>
+                                                    <li className="navbar-item">
+                                                        <Link to="/addstudent" className="nav-link">
+                                                            Add Student
+                                                        </Link>
+                                                    </li>
 
-                        <div className="collapse navbar-collapse">
-                            <ul className="navbar-nav mr-auto">
-                                <li className="navbar-item">
-                                    <Link to="/studentlist" className="nav-link">
-                                        Manage Student
-                                    </Link>
-                                </li>
-                                <li className="navbar-item">
-                                    <Link to="/addstudent" className="nav-link">
-                                        Add Student
-                                    </Link>
-                                </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                                            <Link to="/studentlist" className="navbar-brand">
+                                                Teacher Management
+                                            </Link>
 
-                            </ul>
-                        </div>
-                    </nav>
+                                            <div className="collapse navbar-collapse">
+                                                <ul className="navbar-nav mr-auto">
+                                                    <li className="navbar-item">
+                                                        <Link to="/studentlist" className="nav-link">
+                                                            Manage Teacher
+                                                        </Link>
+                                                    </li>
+                                                    <li className="navbar-item">
+                                                        <Link to="/addstudent" className="nav-link">
+                                                            Add Student
+                                                        </Link>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                                            <Link to="/studentlist" className="navbar-brand">
+                                                Parent Management
+                                            </Link>
+
+                                            <div className="collapse navbar-collapse">
+                                                <ul className="navbar-nav mr-auto">
+                                                    <li className="navbar-item">
+                                                        <Link to="/studentlist" className="nav-link">
+                                                            Manage Parent
+                                                        </Link>
+                                                    </li>
+                                                    <li className="navbar-item">
+                                                        <Link to="/addstudent" className="nav-link">
+                                                            Add Student
+                                                        </Link>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </nav>
                                     </div>
                                 </div>
                             </center>

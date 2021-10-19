@@ -11,6 +11,12 @@ function MainHeader() {
                                 <li class="current">
                                     <Link to="/"> Home </Link>
                                 </li>
+                                <li class="">
+                                    <Link to="/about"> About </Link>
+                                </li>
+                                <li class="">
+                                    <Link to="/contact"> Contact Us </Link>
+                                </li>
                             </ul>
                         </nav>
                     </div>

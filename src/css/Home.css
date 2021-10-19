@@ -40,12 +40,12 @@ ul {
 header {
     background: #264392;
     color: #ffffff;
-    padding-top: 30px;
+    padding: 20px;
     min-height: 70px;
     border-bottom: #ffffff 3px solid;
-    z-index: 100;
+    /* z-index: 100;
     top: 20;
-    position: sticky;
+    position: sticky; */
 }
 
 header a {
@@ -87,10 +87,12 @@ header a:hover {
 
 /* Showcase */
 #showcase {
-    min-height: 400px;
-    background: url("../img/showcase3.jpg") no-repeat 0px;
+    min-height: 500px;
+   
+    background: url("../img/zetu-home.jpg")  0px;
     text-align: center;
     color: #2b4292;
+    
 }
 
 #showcase h1 {
